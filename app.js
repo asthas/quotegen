@@ -28,5 +28,7 @@ var index  = 0;
 
 $("#newq").click(function(){
 	index = Math.floor(Math.random()*quotes.length);
-	$("#quote").html("<p>"+ quotes[index]+ "</p>");
+	$("#quote").html("<p>"+ quotes[index]+ "</p><p style='float: right;'>" + authors[index] + "</p>");
+	$("#inner").append('<style>background-color: #0f0</style>')
+
 });
