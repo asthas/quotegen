@@ -24,5 +24,9 @@ authors[9]= "Bernard M. Baruch";
 quotes[10]= "You know you're in love when you can't fall asleep because reality is finally better than your dreams.";
 authors[10]= "Dr. Seuss";
 
-var index = Math.round(Math.random()*quotes.length);
-console.log(quotes[index]);
+var index  = 0;
+
+$("#newq").click(function(){
+	index = Math.floor(Math.random()*quotes.length);
+	$("#quote").html("<p>"+ quotes[index]+ "</p>");
+});
