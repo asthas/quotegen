@@ -1,0 +1,20 @@
+#inner {
+	position: relative;
+	height: 300px;
+	width: 50%;
+	background-color: #f00;
+	margin: 0 auto;
+	margin-top: 160px;
+	box-shadow: 5px 5px 5px #bbb;
+}
+
+.btn {
+	position: absolute;
+	right:    20px;
+	bottom:   20px;
+}
+.fa {
+	position: absolute;
+	left:    20px;
+	top:   20px;
+}
