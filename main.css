@@ -17,7 +17,7 @@ body {
 	position: relative;
 	height: 300px;
 	width: 50%;
-	background-color: #84FFFF;
+	background-color: #FFC500;
 	margin: 0 auto;
 	margin-top: 160px;
 	box-shadow: 5px 5px 5px #bbb;
@@ -32,6 +32,7 @@ body {
 	position: absolute;
 	left:    20px;
 	top:   20px;
+	color: #fff;
 }
 
 #quote {
@@ -40,5 +41,6 @@ body {
 	top: 40px;
 	left: 80px;
 	font-size: 24px;
+	color: #fff;
 	font-family: font-family: 'Vollkorn', serif;
 }

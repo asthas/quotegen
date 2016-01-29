@@ -29,6 +29,7 @@ var index  = 0;
 $("#newq").click(function(){
 	index = Math.floor(Math.random()*quotes.length);
 	$("#quote").html("<p>"+ quotes[index]+ "</p><p style='float: right;'>" + authors[index] + "</p>");
-	$("#inner").append('<style>background-color: #0f0</style>')
+	var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+	$("#inner").css({"background-color": newColor});
 
 });
