@@ -28,8 +28,12 @@ var index  = 0;
 
 $("#newq").click(function(){
 	index = Math.floor(Math.random()*quotes.length);
+	var quote = quotes[index];
 	$("#quote").html("<p>"+ quotes[index]+ "</p><p style='float: right;'>" + authors[index] + "</p>");
 	var newColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
 	$("#inner").css({"background-color": newColor});
-
+	var base = 'http://twitter.com/home?status=';
+    var url = encodeURI( base + quote );
+    $('#tweet-quote').attr('href', url);
 });
+
